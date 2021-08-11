@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -44,7 +46,7 @@
 }
 
 .footer {
-  position:absolute;
+  position:fixed;
   bottom:0;
   width:100%;
   max-height: 30px;
@@ -52,6 +54,7 @@
   align-content: center;
   background-color: lightslategrey;
   color: white;
+  margin-top: auto;
 }
 
 .navBar {
@@ -124,4 +127,8 @@ input, button, select, option {
 
 .form-label {
   /* color: #3fb9db; */
+}
+
+.body-wrapper {
+  min-height: 30%;
 }
