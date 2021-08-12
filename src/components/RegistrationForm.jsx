@@ -39,7 +39,7 @@ export default function RegistrationForm() {
                 <label>Build and Deployment <input type="checkbox" name="bad" value="Build and Deployment"/></label>
                 <label>DevOps <input type="checkbox" name="devops" value="DevOps"/></label>
             </label>
-            <button type="submit" onClick={() => validateInput()}>Register</button>
+            <button className="btn btn-outline-info" type="submit" onClick={() => validateInput()}>Register</button>
         </div>
     )
 }
