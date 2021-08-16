@@ -2,8 +2,8 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
-import logo from '../logo.svg';
-import image1 from '../images/carousel/1.jpg';
+// import logo from '../logo.svg';
+// import image1 from '../images/carousel/1.jpg';
 
 // import '../../public/images/carousel'
 
@@ -42,7 +42,7 @@ export default function Header() {
             <Carousel
                 showThumbs={false}
                 dynamicHeight={false}
-                autoPlay={true}
+                autoPlay={false}
                 infiniteLoop={true}
                 showStatus={false}
             >

@@ -5,6 +5,7 @@ import { NavBar } from "./NavBar";
 import RegistrationForm from "./RegistrationForm";
 import Contact from "./Contact";
 import MultiFunction from "./MultiFunction";
+import Home from "./Home";
 
 export default function BodyComponent(){
     const [bodyComponent, setBodyComponent] = useState("")
@@ -18,6 +19,8 @@ export default function BodyComponent(){
         result = <Contact/>
     } else if(bodyComponent === "gallery") {
         result = <MultiFunction/>
+    } else if(bodyComponent === "home") {
+        result = <Home/>
     } else {
         result = null;
     }

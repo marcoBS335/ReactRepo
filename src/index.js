@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { ChakraProvider } from "@chakra-ui/react"
 // import 'bootstrap/dist/css/bootstrap.min.css'
 // import $ from 'jquery';
 // import Popper from 'popper.js';
@@ -11,9 +12,30 @@ import reportWebVitals from './reportWebVitals';
 // import 'bootstrap/dist/js/bootstrap.min.js';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 
+import { extendTheme } from "@chakra-ui/react"
+
+const theme = extendTheme({
+  colors: {
+    green: {
+      50: "#08cea3",
+      100: "#08cea3",
+      200: "#08cea3",
+      300: "#08cea3",
+      400: "#08cea3",
+      500: "#08cea3",
+      600: "#08cea3",
+      700: "#08cea3",
+      800: "#08cea3",
+      900: "#08cea3",
+    },
+  },
+})
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ChakraProvider theme={theme}>
+      <App />
+    </ChakraProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -11,6 +11,7 @@ import Contact from "./Contact";
 import Courses from "./Courses";
 import MultiFunction from "./MultiFunction";
 import RegistrationForm from "./RegistrationForm";
+import Home from "./Home";
 
 export const NavBar = React.memo(({ menuToRender, menuToSet }) => {
     
@@ -31,7 +32,7 @@ export const NavBar = React.memo(({ menuToRender, menuToSet }) => {
 
             <Switch>
                 <Route exact path="/">
-                    <Courses/>
+                    <Home/>
                 </Route>
                 <Route path="/courses">
                     <Courses/>
