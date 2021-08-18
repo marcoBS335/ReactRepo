@@ -191,3 +191,12 @@ ul.courses-list {
 .welcom-title {
   margin-top: 4vh;
 }
+
+.navbar-search {
+  left: 15vw;
+  /* color: green; */
+  background-color: white;
+  margin: auto;
+  max-width: 20vw;
+  border-radius: 5px;
+}
