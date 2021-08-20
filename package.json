@@ -29,7 +29,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "docker-build": "docker build -t react-docker .",
+    "react-docker": "docker run -p 3000:3000 react-docker"
   },
   "eslintConfig": {
     "extends": [
